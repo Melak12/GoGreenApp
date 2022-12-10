@@ -7,6 +7,17 @@ https://www.behance.net/gallery/126157783/Plant-App?tracking_source=search_proje
 
 ## Getting Started
 
+
+## Build Runner
+### Use These commands to generate files for freezed and stacked packages
+=> Build Runner (Without Watch)
+flutter pub run build_runner build --delete-conflicting-outputs
+
+=> Build Runner (watching)
+flutter pub run build_runner watch --delete-conflicting-outputs
+
+
+## More
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

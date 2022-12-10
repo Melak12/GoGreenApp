@@ -15,20 +15,22 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Stacked
+  stacked: ^3.0.1
+  stacked_services: ^0.9.8
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  # Data Model
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
+
+  line_icons: ^2.0.1
+  logger: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  # see `analysis_options.yaml` file located at the root of app
   flutter_lints: ^2.0.0
   mockito: ^5.3.1
   build_runner:
@@ -70,10 +72,8 @@ flutter:
         - asset: fonts/Oswald-Regular.ttf
         - asset: fonts/Oswald-Bold.ttf
           weight: 700
-        - asset: fonts/Oswald-SemiBold.ttf
+        - asset: fonts/Oswald-Medium.ttf
           weight: 500
-        - asset: fonts/Oswald-Light.ttf
-          weight: 300
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
