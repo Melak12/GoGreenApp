@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+## UI Design Inspiration
+https://www.behance.net/gallery/126157783/Plant-App?tracking_source=search_projects%7Cplant+shop
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
