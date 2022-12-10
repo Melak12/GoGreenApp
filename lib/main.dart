@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'app/app.locator.dart';
 import 'app_libs.dart';
 import 'gogreen_app.dart';
 
@@ -13,7 +14,8 @@ void main() async {
   // Initialize Firebase
   // todo
 
-  // todo: setup locator
+  //setup locator
+  setupLocator(); // from stacked generator
 
   // Setup orientation
   // Setup orientation

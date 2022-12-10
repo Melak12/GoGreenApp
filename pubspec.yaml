@@ -25,6 +25,8 @@ dependencies:
 
   line_icons: ^2.0.1
   logger: ^1.1.0
+  cached_network_image: ^3.2.3
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -39,6 +41,7 @@ dev_dependencies:
   test_cov: ^1.0.1
   flutter_launcher_icons: ^0.10.0
   flutter_native_splash:
+  stacked_generator: ^0.8.1
 
 
 

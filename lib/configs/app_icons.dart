@@ -7,4 +7,5 @@ class AppIcons {
   AppIcons._();
 
   static const home = LineIcons.home;
+  static const image = LineIcons.image;
 }

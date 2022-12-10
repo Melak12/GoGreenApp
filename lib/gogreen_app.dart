@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:go_green_app/pages/startup/startup_view.dart';
+import 'package:go_green_app/pages/startup/startup.view.dart';
+import 'package:stacked_services/stacked_services.dart';
+import 'app/app.router.dart';
 import 'app_libs.dart';
 
 class GoGreenApp extends StatelessWidget {
@@ -12,16 +14,21 @@ class GoGreenApp extends StatelessWidget {
     return MaterialApp(
       title: 'Go Green',
       theme: lightTheme,
+      debugShowCheckedModeBanner: false,
       home: const AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle(
           systemNavigationBarColor: kcPrimary,
-          systemNavigationBarDividerColor: kcLight,
+          systemNavigationBarDividerColor: kcPrimary,
           statusBarColor: kcPrimary,
           statusBarBrightness: Brightness.light,
+          statusBarIconBrightness: Brightness.light,
           systemNavigationBarIconBrightness: Brightness.light,
         ),
         child: StartupView(),
       ),
+      onGenerateRoute:
+          StackedRouter().onGenerateRoute, // from stacked generator
+      navigatorKey: StackedService.navigatorKey,
     );
   }
 }
